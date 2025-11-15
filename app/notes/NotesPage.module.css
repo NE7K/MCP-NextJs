@@ -1,0 +1,138 @@
+.page {
+  padding: 48px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+.newButton {
+  padding: 12px 24px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.newButton:hover {
+  background: #1565c0;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 48px;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+  margin-bottom: 16px;
+}
+
+.retryButton {
+  padding: 10px 20px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+.empty {
+  text-align: center;
+  padding: 96px 24px;
+  color: #666;
+}
+
+.empty p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.notesList {
+  display: grid;
+  gap: 16px;
+}
+
+.noteItem {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+  display: block;
+}
+
+.noteItem:hover {
+  border-color: #1976d2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.noteTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #111;
+}
+
+.noteMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.noteDate {
+  color: #999;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .page {
+    padding: 24px 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .noteItem {
+    padding: 16px;
+  }
+
+  .noteTitle {
+    font-size: 18px;
+  }
+}
+

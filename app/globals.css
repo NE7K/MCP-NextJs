@@ -1,0 +1,47 @@
+/* 나눔스퀘어 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Square:wght@400;700;800&display=swap');
+
+/* 최소 전역 스타일 - 필요에 따라 확장 */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Square', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Sidebar 레이아웃용 */
+.pageWrapper {
+  margin-left: 280px;
+  transition: margin-left 0.3s ease;
+  min-height: 100vh;
+}
+
+.pageWrapperNoSidebar {
+  margin-left: 0;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .pageWrapper {
+    margin-left: 260px;
+  }
+}
+
+
