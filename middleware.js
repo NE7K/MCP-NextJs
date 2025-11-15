@@ -61,6 +61,14 @@ export async function middleware(request) {
 
   const { pathname } = request.nextUrl;
 
+  // 루트 경로 접근 시 세션 여부에 따라 초기 리다이렉트
+  if (pathname === '/') {
+    if (session) {
+      return NextResponse.redirect(new URL('/notes', request.url));
+    }
+    return NextResponse.redirect(new URL('/login', request.url));
+  }
+
   // 로그인 페이지는 인증되지 않은 사용자만 접근 가능
   if (pathname === '/login') {
     if (session) {

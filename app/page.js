@@ -3,5 +3,3 @@ export default function Home() {
   // 여기서는 아무 것도 렌더링하지 않습니다.
   return null;
 }
-
-
